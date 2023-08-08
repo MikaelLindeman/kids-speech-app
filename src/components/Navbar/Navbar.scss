@@ -1,0 +1,10 @@
+@import "../../styles/variables";
+
+.navbar {
+  position: sticky;
+  background: $primary-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+}
