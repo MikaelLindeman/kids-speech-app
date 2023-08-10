@@ -8,21 +8,21 @@ function LandingPage() {
   return (
     <>
       <div className="landing-page">
-        <div className="top-page">
-          <div className="top-logo">
+        <div className="landing-page__top">
+          <div className="landing-page__logo">
             <motion.img
               src={logo}
-              alt="Play Game Logo"
+              alt="Lillalingo logo"
               initial="start"
               animate="end"
               variants={logoVariants}
             />
           </div>
 
-          <div className="top-play">
+          <div className="landing-page__play-button">
             <motion.img
               src={play}
-              alt="Play Game Logo"
+              alt="Start game button"
               initial="start"
               animate="end"
               variants={logoVariants}
@@ -31,10 +31,10 @@ function LandingPage() {
         </div>
         <div className="bottom-page">
           <div className="bottom-start">
-            <h1>Starta spel</h1>
+            <h1>Om spelet</h1>
           </div>
           <div className="bottom-about">
-            <h2>Om spelet</h2>
+            <h4>Varför LillaLingo?</h4>
           </div>
         </div>
       </div>

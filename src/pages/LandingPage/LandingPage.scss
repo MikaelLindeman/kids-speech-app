@@ -1,19 +1,42 @@
+@import "../../styles/variables";
+
 .landing-page {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 
-.top-page {
+.landing-page__top {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.landing-page__logo {
+  width: 40vw;
+  @media (max-width: 767px) {
+    width: 80vw;
+  }
+  @media (min-width: 1200px) {
+    width: 20vw;
+  }
 
-  .top-logo {
-    .img {
-      width: 2000px;
-    }
+  img {
+    width: 100%;
+  }
+}
+.landing-page__play-button {
+  width: 25vw;
+
+  @media (max-width: 767px) {
+    width: 70vw;
+  }
+  @media (min-width: 1200px) {
+    width: 20vw;
+  }
+
+  img {
+    width: 100%;
   }
 }
