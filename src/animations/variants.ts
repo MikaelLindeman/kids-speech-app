@@ -13,3 +13,13 @@ export const logoVariants = {
     },
   },
 };
+
+export const buttonVariants = {
+  hidden: { opacity: 0 },
+  visible: (i: any) => ({
+    opacity: 1,
+    transition: {
+      delay: i * 0.5,
+    },
+  }),
+};

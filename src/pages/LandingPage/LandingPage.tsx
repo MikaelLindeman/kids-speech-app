@@ -2,7 +2,7 @@ import "./LandingPage.scss";
 import { motion } from "framer-motion";
 import play from "../../assets/images/play-game.svg";
 import logo from "../../assets/images/logo.svg";
-import { logoVariants } from "../../animations/variants";
+import { buttonVariants, logoVariants } from "../../animations/variants";
 
 function LandingPage() {
   return (
@@ -29,13 +29,34 @@ function LandingPage() {
             />
           </div>
         </div>
-        <div className="bottom-page">
-          <div className="bottom-start">
-            <h1>Om spelet</h1>
-          </div>
-          <div className="bottom-about">
-            <h4>Varför LillaLingo?</h4>
-          </div>
+        <div className="landing-page__bottom-page">
+          <motion.button
+            className="landing-page__bottom-button landing-page__bottom-about"
+            initial="hidden"
+            animate="visible"
+            custom={1}
+            variants={buttonVariants}
+          >
+            Om spelet
+          </motion.button>
+          <motion.button
+            className="landing-page__bottom-button landing-page__bottom-why"
+            initial="hidden"
+            animate="visible"
+            custom={2}
+            variants={buttonVariants}
+          >
+            Vad är LillaLingo?
+          </motion.button>
+          <motion.button
+            className="landing-page__bottom-button landing-page__bottom-contact"
+            initial="hidden"
+            animate="visible"
+            custom={3}
+            variants={buttonVariants}
+          >
+            Kontakta oss
+          </motion.button>
         </div>
       </div>
     </>
