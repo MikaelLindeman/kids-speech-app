@@ -58,19 +58,25 @@
     cursor: pointer;
     flex-basis: calc(40% - 10px);
 
-    &:hover {
-      background-color: #28d780;
-      color: blue;
-    }
     &:nth-child(1) {
       background-color: #2880d7;
+      &:hover {
+        background-color: rgba(40, 168, 215, 0.581);
+      }
     }
+
     &:nth-child(2) {
       margin-right: 20px;
       background-color: #fab876;
+      &:hover {
+        background-color: #fab87673;
+      }
     }
     &:nth-child(3) {
       background-color: #28d780;
+      &:hover {
+        background-color: #28d77f64;
+      }
     }
   }
 }
