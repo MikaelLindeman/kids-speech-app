@@ -4,6 +4,7 @@ import play from "../../assets/images/play-game.svg";
 import logo from "../../assets/images/logo.svg";
 import { buttonVariants, logoVariants } from "../../animations/variants";
 import { useNavigate } from "react-router-dom";
+import NavigateButton from "../../components/NavigateButton/NavigateButton";
 
 function LandingPage() {
   const navigate = useNavigate();
@@ -37,15 +38,14 @@ function LandingPage() {
           </div>
         </div>
         <div className="landing-page__bottom-page">
-          <motion.button
+          <NavigateButton
+            path="/about"
+            label="Om spelet"
             className="landing-page__bottom-button landing-page__bottom-about"
-            initial="hidden"
-            animate="visible"
             custom={1}
             variants={buttonVariants}
-          >
-            Om spelet
-          </motion.button>
+          />
+
           <motion.button
             className="landing-page__bottom-button landing-page__bottom-why"
             initial="hidden"
@@ -55,16 +55,13 @@ function LandingPage() {
           >
             Vad är LillaLingo?
           </motion.button>
-          <motion.button
+          <NavigateButton
+            path="/contact"
+            label="Kontakta oss"
             className="landing-page__bottom-button landing-page__bottom-contact"
-            initial="hidden"
-            animate="visible"
             custom={3}
             variants={buttonVariants}
-            onClick={handleButtonClick}
-          >
-            Kontakta oss
-          </motion.button>
+          />
         </div>
       </div>
     </>
