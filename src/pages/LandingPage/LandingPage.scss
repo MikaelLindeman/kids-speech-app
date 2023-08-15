@@ -28,13 +28,13 @@
 }
 .landing-page__play-button {
   cursor: pointer;
-  width: 25vw;
+  width: 10vw;
 
   @media (max-width: 767px) {
     width: 70vw;
   }
   @media (min-width: 1200px) {
-    width: 20vw;
+    width: 10vw;
   }
 
   img {

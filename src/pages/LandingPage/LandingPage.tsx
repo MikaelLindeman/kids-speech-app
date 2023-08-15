@@ -3,8 +3,15 @@ import { motion } from "framer-motion";
 import play from "../../assets/images/play-game.svg";
 import logo from "../../assets/images/logo.svg";
 import { buttonVariants, logoVariants } from "../../animations/variants";
+import { useNavigate } from "react-router-dom";
 
 function LandingPage() {
+  const navigate = useNavigate();
+
+  const handleButtonClick = () => {
+    navigate("/contact");
+  };
+
   return (
     <>
       <div className="landing-page">
@@ -54,6 +61,7 @@ function LandingPage() {
             animate="visible"
             custom={3}
             variants={buttonVariants}
+            onClick={handleButtonClick}
           >
             Kontakta oss
           </motion.button>
