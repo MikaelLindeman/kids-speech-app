@@ -7,12 +7,6 @@ import { useNavigate } from "react-router-dom";
 import NavigateButton from "../../components/NavigateButton/NavigateButton";
 
 function LandingPage() {
-  const navigate = useNavigate();
-
-  const handleButtonClick = () => {
-    navigate("/contact");
-  };
-
   return (
     <>
       <div className="landing-page">

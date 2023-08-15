@@ -2,7 +2,12 @@
 
 .navbar {
   position: fixed;
-  background: $primary-color;
+  background: rgba(
+    red($primary-color),
+    green($primary-color),
+    blue($primary-color),
+    0.5
+  );
   display: flex;
   justify-content: center;
   align-items: center;
