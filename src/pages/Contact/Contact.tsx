@@ -53,7 +53,7 @@ function Contact() {
           />
         </div>
 
-        <div className="input-group__message">
+        <div className="input-group">
           <label htmlFor="message">Message:</label>
           <textarea
             id="message"

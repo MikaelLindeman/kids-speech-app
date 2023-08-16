@@ -4,6 +4,7 @@
   padding: 2rem;
   max-width: 600px;
   margin: 0 auto;
+  height: 95vh;
 
   h1 {
     text-align: center;
@@ -23,8 +24,8 @@
       textarea {
         width: 100%;
         padding: 0.5rem;
-        border: 1px solid #ccc;
-        border-radius: 4px;
+        border: none;
+        border-radius: 7px;
         font-size: 1rem;
       }
 
@@ -36,7 +37,7 @@
 
     .submit-button {
       display: block;
-      background-color: #007bff;
+      background-color: #51de8a;
       color: white;
       padding: 0.5rem 1rem;
       border: none;
