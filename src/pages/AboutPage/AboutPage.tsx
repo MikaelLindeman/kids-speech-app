@@ -11,7 +11,12 @@ function AboutPage() {
 
   return (
     <div>
-      <h1></h1>
+      {data.map((entry: any, index: number) => (
+        <div key={index}>
+          <h1>{entry.title}</h1>
+          <p>{entry.description}</p>
+        </div>
+      ))}
     </div>
   );
 }
