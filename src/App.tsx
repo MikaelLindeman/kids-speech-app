@@ -22,7 +22,7 @@ function App() {
           <Route path="/game" Component={GamePage} />
           <Route path="/result" Component={ResultPage} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </Router>
   );
