@@ -1,3 +1,10 @@
+Currently a work in progress.
+
+The app aims to provide an interactive platform for kids to improve their language skills, drawing inspiration from professional techniques used in speech therapy.
+It's a combination of educational and interactive elements to engage kids and provide feedback on their progress. 
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
