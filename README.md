@@ -1,4 +1,4 @@
-Currently a work in progress.
+# THIS APP IS CURRENTLY WORK IN PROGRESS
 
 The app aims to provide an interactive platform for kids to improve their language skills, drawing inspiration from professional techniques used in speech therapy.
 It's a combination of educational and interactive elements to engage kids and provide feedback on their progress. 
